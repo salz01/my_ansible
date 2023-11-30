@@ -19,4 +19,8 @@
 
   - name: Install Moba
     win_package:
-    src: D\Downloads\Moba\
+    src: D\Downloads\Moba\MobaXterm_installer_23.4.msi
+    state: present
+
+
+    
