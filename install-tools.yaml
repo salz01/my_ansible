@@ -15,3 +15,6 @@
     state: present
 
 
+- name: win_command
+  win_command: C:\Windows\System32\msiexec.exe /i D:\Downloads\7z2301-x64.msi /qn /norestart
+  when: 7zip_installed.exists == false
