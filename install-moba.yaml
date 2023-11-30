@@ -12,14 +12,14 @@
   - name: Unpack
     win_unzip:
       src: D:\Downloads\Moba\MobaXterm_Installer_v23.4.zip
-      dest: D:\Downloads\Moba
+      dest: D:\Downloads
     become: yes
     become_method: runas
     become_user: SYSTEM
 
   - name: Install Moba
     win_package:
-      path: D\Downloads\Moba\MobaXterm_installer_23.msi
+      path: D\Downloads\MobaXterm_installer_23.4.msi
       state: present
 
 
