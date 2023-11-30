@@ -13,10 +13,10 @@
     become: yes
     unarchive:
       src: D:\Downloads\Moba\MobaXterm_Installer_v23.4.zip
-      remote_src: no
+      remote_src: yes
       dest: D:\Downloads
-    with_items:
-    - MobaXterm_Installer_v23.4.zip
+   # with_items:
+    #- MobaXterm_Installer_v23.4.zip
   
 
       
