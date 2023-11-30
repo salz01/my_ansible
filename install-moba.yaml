@@ -19,7 +19,7 @@
 
   - name: Install Moba
     win_package:
-      path: D\Downloads\Moba\MobaXterm_installer_23.4.msi
+      path: D\Downloads\Moba\MobaXterm_installer_23.msi
       state: present
 
 
