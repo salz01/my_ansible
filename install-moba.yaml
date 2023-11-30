@@ -10,6 +10,6 @@
       dest: D:\Downloads
   - name: unzip gz
     win_unzip:
-      src: D:\Downloads\Moba\MobaXterm_Installer_v23.4.zip
+      src: D:\Downloads\MobaXterm_Installer_v23.4.zip
       dest: D:\Downloads
       recurse: yes
