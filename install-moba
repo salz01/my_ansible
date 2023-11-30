@@ -1,0 +1,15 @@
+---
+- hosts: all
+  vars:
+    path_dest: D:\Example
+  gather_facts: no
+  tasks:
+  - name: 
+    win_get_url:
+      url: https://download.mobatek.net/2342023101450418/MobaXterm_Installer_v23.4.zip
+      dest: D:\Downloads\Moba 
+  - name: unzip gz
+    win_unzip:
+      src: D:\Downloads\Moba\MobaXterm_Installer_v23.4.zip
+      dest: D:\Downloads\Moba
+      recurse: yes
