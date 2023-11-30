@@ -1,29 +1,17 @@
 ---
-- name: Installing Apache MSI
+- name: Installing MSI
   hosts: all
   gather_facts: false
 
   tasks:
-    - name: Download the Apache installer
+    - name: Download the installer
       win_get_url:
-        url: https://archive.apache.org/dist/httpd/binaries/win32/httpd-2.2.25-win32-x86-no_ssl.msi
-        dest: D:\Downloads\httpd-2.2.25-win32-x86-no_ssl.msi
+        url: https://onboardcloud.dl.sourceforge.net/project/sevenzip/7-Zip/23.01/7z2301-x64.msi
+        dest: D:\Downloads\7z2301-x64.msi
 
-    - name: Download the Apache installer
-      win_get_url:
-        url: https://archive.apache.org/dist/httpd/binaries/win32/httpd-2.2.25-win32-x86-no_ssl.msi
-        dest: D:\Downloads\httpd-2.2.25-win32-x86-no_ssl.msi
+- name: Ensure 7-Zip is installed through win_package
+  win_package:
+    path: D:\Downloads\7z2301-x64.msi
+    state: present
 
-    - name: Install MSI
-      win_package:
-        path: D:\Downloads\httpd-2.2.25-win32-x86-no_ssl.msi
-        state: present
-        reboot: no
 
-    - name: Install MSI 2
-      win_package: 
-        path: D:\Downloads\httpd-2.2.25-win32-x86-no_ssl.msi
-        arguments:
-          - /install
-          - /passive
-          - /norestart
