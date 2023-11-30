@@ -9,10 +9,10 @@
         url: https://onboardcloud.dl.sourceforge.net/project/sevenzip/7-Zip/23.01/7z2301-x64.msi
         dest: D:\Downloads\7z2301-x64.msi
 
-- name: Ensure 7-Zip is installed through win_package
-  win_package:
-    path: D:\Downloads\7z2301-x64.msi
-    state: present
+##- name: Ensure 7-Zip is installed through win_package
+ ## win_package:
+  ##  path: D:\Downloads\7z2301-x64.msi
+ ##   state: present
 
 
 - name: win_command
