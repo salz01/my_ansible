@@ -3,5 +3,5 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: Reboot the machine with all defaults
-      ansible.windows.win_reboot:
+    - name: Unconditionally reboot the machine with all defaults
+        ansible.builtin.reboot:
