@@ -2,7 +2,9 @@
 - name : restart mode
   hosts: all
   gather_facts: false
-  tasks:
-    - name: Wait for server to restart 
-       reboot: 
-       reboot_timeout: 3600
+  -  name: restart server
+     shell: 'sleep 1 && shutdown -r 10 "Reboot triggered by Ansible" && sleep 1'
+     async: 1
+     poll: 0
+     ignore_errors: true
+     become: true
