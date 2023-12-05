@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name : restart mode
+  hosts: all
   gather_facts: false
   tasks:
     - name: Reboot the machine with all defaults
