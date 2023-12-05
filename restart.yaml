@@ -3,5 +3,6 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: Unconditionally reboot the machine with all defaults
-        ansible.builtin.reboot:
+    - name: Wait for server to restart 
+       reboot: 
+       reboot_timeout: 3600
