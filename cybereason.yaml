@@ -12,4 +12,5 @@
     - name: Install cybereason
       win_package:
         path: C:\Users\114612.imam\Downloads\CybereasonSensor64_23_2_67_1_klgsys_klgsys-r.cybereason.net_443_ACTIVE_NORMAL.exe
+        product_id: '{992C405F-0256-4740-B08D-413C55DA539C}'
         state: present
