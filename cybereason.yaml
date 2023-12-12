@@ -6,10 +6,10 @@
   tasks:
     - name: Download the installer
       win_get_url:
-        url: https://doc-04-bs-docs.googleusercontent.com/docs/securesc/sqbo4vbrkirj3u19duvakf99ktgn6gkc/npput63c3c1ulfhe07ljjfmponi62jgl/1702361175000/04755564595844269776/04755564595844269776/12ggzalfS8VUYyV-JNd2uDqFM0SDkqlWb?e=download&ax=AEqgLxmtTnbT7wkj4xN2iXVqaJDehOVfyrI09NRpsPTG_woQZkUV1WwPGuMygW9oBepw3iZ92sVUX_5fXtNUsHsfSoyaOqHsJOeTQ2lQZGh-Jcy0U9cq5y47R_By1CksN7tYP5DDlzotvHcgkoaFSN3Xq28Z2HHLIKZG70gDDBi6slE1eA4ohceDREiM9iLU5eZISK0n-xxrZomFGveBcWJDHzBEsbfYfQJJ9FjopbUfQbre7Thf-T-G6OHBJGkQz1qgZ5rrKzLMmytEsor8LpIsIoxgR60oHVVEV1EYmIhvfIBcjSdfuoEoQUJaMiiInPu63pBE_HLO1hYgk1OOh8oEsILwTRytvDij03Lg9MsCEBYHbHltk9ZoK0O4D_Ge2c7VEZvW3qnvC1f8cPLop9mbcgogdqSEpOTIuUW-rFYCRU-gTNTPoufI4Tvvlipi_UMLJnN0whaw2ObvPMhHJNer_8R0_x2Cg6b4ifqwBvIka8Jil9Sxq4e2aQeJZolSTbXojs98AM0pmR_btSEYKfl8S3cxjL-BUSVmdv78lPY8hecPb-zl_zWDMgSIUCoAVcB_mHjAnjqYlskqttqzOALCqdlsQkPucB22ot1gkDBhfwmrf5vEAYgXGrh1d4wq2srzHyWS4yoZFFxRCszS_6tVfuYLXwMjbfnEFH0YuCGGi0RSlJvvrLaQxAI4HrtH7zmOmVwvuCm9rRyzh35DW8mFLrXjc0hq1El2ddqyrh2yvTv6dWGwECqnEEXdHAF2B_B1DZnuVilTGBmR21Kh_a8A6HR3Zxejd_sS-my-cf_7oco4PPJR_pqg5AI1Y4z-kAvoOX22PC78PwSlhjqOmo-PDlHC70rQthe8kGUF1ROHNiA1j0UO1Jw0ge7cBoYp5-UwHQTqNGf2OCK5mX8fOXDy0dTLicaD63YaASTNRPJUUCwoDqWKeINnLA&uuid=9a5bc44f-e167-4ef5-95b1-34d97a2104c0&authuser=0&nonce=rcejr09166ab2&user=04755564595844269776&hash=o0scgmm8c92vk53c07nlbjpf6f0l65je
-        dest: C:\Users\114612.imam\Downloads\CybereasonSensor64_23_2_67_1.exe
+        url: https://klgsys.cybereason.net/rest/monitor/global/version/download/platform?serverId=656f63934f49465d7038722b&downloadId=195250059
+        dest: C:\Users\114612.imam\Downloads\CybereasonSensor64_23_2_67_1_klgsys_klgsys-r.cybereason.net_443_ACTIVE_NORMAL.exe
         
     - name: Install cybereason
       win_package:
-        path: C:\Users\114612.imam\Downloads\CybereasonSensor64_23_2_67_1.exe
+        path: C:\Users\114612.imam\Downloads\CybereasonSensor64_23_2_67_1_klgsys_klgsys-r.cybereason.net_443_ACTIVE_NORMAL.exe
         state: present
