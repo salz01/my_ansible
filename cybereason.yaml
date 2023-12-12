@@ -4,17 +4,18 @@
   gather_facts: false
 
   tasks:
-    - name: Download the installer
-      win_get_url:
-        url: https://klgsys.cybereason.net/rest/monitor/global/version/download/platform?serverId=656f63934f49465d7038722b&downloadId=195250059
-        dest: C:\Users\114612.imam\Downloads\CybereasonSensor64_23_2_67_1_klgsys_klgsys-r.cybereason.net_443_ACTIVE_NORMAL.exe
+    #- name: Download the installer
+     # win_get_url:
+     #   url: https://klgsys.cybereason.net/rest/monitor/global/version/download/platform?serverId=656f63934f49465d7038722b&downloadId=195250059
+      #  dest: C:\Users\114612.imam\Downloads\CybereasonSensor64_23_2_67_1_klgsys_klgsys-r.cybereason.net_443_ACTIVE_NORMAL.exe
         
-   # - name: Install cybereason
-    #  win_package:
-    #    path: C:\Users\114612.imam\Downloads\CybereasonSensor64_23_2_67_1_klgsys_klgsys-r.cybereason.net_443_ACTIVE_NORMAL.exe
-     #   product_id: '{992C405F-0256-4740-B08D-413C55DA539C}'
-    #    arguments:
-     #   - /install
-    #    - /norestart
-     #   - /passive
+    - name: Install cybereason
+      win_package:
+        path: https://klgsys.cybereason.net/rest/monitor/global/version/download/platform?serverId=656f63934f49465d7038722b&downloadId=195250059/CybereasonSensor64_23_2_67_1_klgsys_klgsys-r.cybereason.net_443_ACTIVE_NORMAL.exe
+        product_id: '{992C405F-0256-4740-B08D-413C55DA539C}'
+        arguments:
+        - /install
+        - /norestart
+        - /passive
+         
         #state: present
